@@ -8,6 +8,16 @@ section#page-background {
     background-image: url('../assets/ESnflJn.jpg');
 }
 
+.navbar {
+    transition: background 250ms ease-in;
+}
+
+.nav-scrolled {
+    background: #f4f4f4;    
+    box-shadow: 0 3px 20px rgba(0,0,0,0.2);
+}
+
 .nav-item > a {
     margin-left: 8px;
 }
+
