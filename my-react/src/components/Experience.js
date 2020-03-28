@@ -12,7 +12,7 @@ const About = () => {
                 <div className="position">
                     <div className="job">
                         <div className="company">MGDAnalytics</div>
-                        <div className="time">June 2019 - Present</div>
+                        <div className="time">June 2019 - December 2019</div>
                         <div className="title">Full Stack Developer</div>
                         <div className="description">
                             Created a webserver which webscrapes sports odds for the sake of betting on matches.
@@ -27,6 +27,7 @@ const About = () => {
                             <li>Selenium</li>
                             <li>PostgreSQL</li>
                             <li>DigitalOcean (Cloud)</li>
+                            <li>Linux systemd</li>
                         </ul>
 
                     </div>
