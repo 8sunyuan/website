@@ -6,9 +6,9 @@ import pic from '../assets/mgda.png'
 const About = () => {
     return (
         <React.Fragment>
-            <Container fluid className="exp-container">
+            <Container fluid id="Experience" className="exp-container">
                 <Container className="exp-flex">
-                <div className="exp-title">Experience</div>
+                <div className="exp-title">EXPERIENCE</div>
                 <div className="position">
                     <div className="job">
                         <div className="company">MGDAnalytics</div>

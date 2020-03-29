@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
-import './NavigationBar.css';
 import { Nav, Navbar, Container } from 'react-bootstrap';
+import { Link, animateScroll as scroll } from "react-scroll";
 // SVG icons from flaticon.com
 import { ReactComponent as GitSVG } from '../assets/github.svg';
 import { ReactComponent as InstaSVG } from '../assets/instagram.svg';
@@ -29,13 +28,54 @@ const NavigationBar = () => {
     <React.Fragment>
         <Navbar className={scroll ? '' : 'nav-scrolled' } fixed="top" scrolling expand="lg">
             <Container fluid>
-            <Navbar.Brand >Yuan Sun</Navbar.Brand>
+            <Navbar.Brand >
+                <Link 
+                    activeClass='active'
+                    to='Background'
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    >Yuan Sun
+                </Link>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
-                    <Nav.Item className="d-flex align-items-center"><Nav.Link href="" className="text-dark">About</Nav.Link></Nav.Item>
-                    <Nav.Item className="d-flex align-items-center"><Nav.Link href="" className="text-dark">Experience</Nav.Link></Nav.Item>
-                    <Nav.Item className="d-flex align-items-center"><Nav.Link href="" className="text-dark">Projects</Nav.Link></Nav.Item>
+                    <Nav.Item className="d-flex align-items-center">
+                        <Link 
+                            className="nav-link text-dark"
+                            activeClass='active'
+                            to='About'
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                            >About
+                        </Link>
+                    </Nav.Item>
+                    <Nav.Item className="d-flex align-items-center">
+                        <Link 
+                            className="nav-link text-dark"
+                            activeClass='active'
+                            to='Experience'
+                            spy={true}
+                            smooth={true}
+                            offset={-60}
+                            duration={500}
+                            >Experience
+                        </Link>
+                    </Nav.Item>
+                    <Nav.Item className="d-flex align-items-center"><Link 
+                            className="nav-link text-dark"
+                            activeClass='active'
+                            to='Projects'
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                            >Projects
+                        </Link></Nav.Item>
                     <Nav.Item><Nav.Link target="_blank" href="https://github.com/8sunyuan/"><GitSVG width={25} height={35} /></Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link target="_blank" href="https://www.linkedin.com/in/yuan-sun-5a8843179/"><LinkedSVG width={25} height={35} /></Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link target="_blank" href="https://www.instagram.com/michael_dimsun/"><InstaSVG width={25} height={35} /></Nav.Link></Nav.Item>
@@ -43,7 +83,7 @@ const NavigationBar = () => {
             </Navbar.Collapse>
             </Container>
         </Navbar>
-        <Container fluid className="page-background">
+        <Container id="Background" fluid className="page-background">
             <div className="head-1">HI, I'M YUAN SUN</div>
             <div className="head-2">Computer Scientist / Software Engineer</div>
             <div className="head-2">michaelsun97@gmail.com</div>

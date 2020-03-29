@@ -6,8 +6,8 @@ import pic from '../assets/profile.png'
 const About = () => {
     return (
         <React.Fragment>
-            <Container className="about-container">
-                <div className="about-title">About Me</div>
+            <Container className="about-container" id="About">
+                <div className="about-title">ABOUT ME</div>
                 <img className="about-pic rounded-circle" width="200px" src={pic} />
                 <div className="about-text">
                 Hey! My name is Yuan but I usually go by Michael. I'm a software engineer with a passion for web development.
