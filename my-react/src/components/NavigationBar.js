@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 // SVG icons from flaticon.com
 import { ReactComponent as GitSVG } from '../assets/github.svg';
 import { ReactComponent as InstaSVG } from '../assets/instagram.svg';
@@ -96,7 +96,18 @@ const NavigationBar = () => {
             <div className="head-1">HI, I'M YUAN SUN</div>
             <div className="head-2">Computer Scientist / Software Engineer</div>
             <div className="head-2">michaelsun97@gmail.com</div>
-            <div className="arrow"><Nav.Link href=""><ArrowSVG width={45}/></Nav.Link></div>
+            <div className="arrow">
+                <Link 
+                    className="nav-link text-dark"
+                    activeClass='active'
+                    to='About'
+                    spy={true}
+                    smooth={true}
+                    offset={-125}
+                    duration={500}
+                    ><ArrowSVG width={45}/>
+                </Link>
+            </div>
         </Container>
     </React.Fragment>
     )

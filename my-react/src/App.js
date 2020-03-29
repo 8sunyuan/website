@@ -8,11 +8,7 @@ export default () => {
   return (
     <React.Fragment>
       <Navigationbar />
-        <Router>
-          <Switch>
-            <Route exact path="/" component={Home} />
-          </Switch>
-        </Router>
+      <Home />
     </React.Fragment>
   );
 }
