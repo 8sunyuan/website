@@ -24,6 +24,14 @@ const NavigationBar = () => {
         })
     })  
 
+    let timer = setTimeout(onTick, 150);
+    function onTick() {
+        const head1 = document.querySelector(".head-1");
+        const head2 = document.querySelector(".head-2")
+        head1.classList.add('fade');
+        head2.classList.add('fade');
+    }
+
     return (
     <React.Fragment>
         <Navbar className={scroll ? '' : 'nav-scrolled' } fixed="top" scrolling expand="lg">
@@ -49,7 +57,7 @@ const NavigationBar = () => {
                             to='About'
                             spy={true}
                             smooth={true}
-                            offset={0}
+                            offset={-125}
                             duration={500}
                             >About
                         </Link>
@@ -61,7 +69,7 @@ const NavigationBar = () => {
                             to='Experience'
                             spy={true}
                             smooth={true}
-                            offset={-60}
+                            offset={-125}
                             duration={500}
                             >Experience
                         </Link>
@@ -72,10 +80,11 @@ const NavigationBar = () => {
                             to='Projects'
                             spy={true}
                             smooth={true}
-                            offset={0}
+                            offset={-125}
                             duration={500}
                             >Projects
-                        </Link></Nav.Item>
+                        </Link>
+                    </Nav.Item>
                     <Nav.Item><Nav.Link target="_blank" href="https://github.com/8sunyuan/"><GitSVG width={25} height={35} /></Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link target="_blank" href="https://www.linkedin.com/in/yuan-sun-5a8843179/"><LinkedSVG width={25} height={35} /></Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link target="_blank" href="https://www.instagram.com/michael_dimsun/"><InstaSVG width={25} height={35} /></Nav.Link></Nav.Item>

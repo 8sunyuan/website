@@ -13,7 +13,7 @@ const CardProj = (props) => {
 
     return (
         <Card>
-            <Card.Body>
+            <Card.Body className="d-flex flex-column">
                 <Card.Title>
                     <div>{props.title}</div>
                     <div className="card-icons">
