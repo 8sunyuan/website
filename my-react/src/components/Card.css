@@ -32,6 +32,7 @@
 
 .card-tech {
     display: flex;
+    flex-wrap: wrap;
     margin-top: auto;
 }
 

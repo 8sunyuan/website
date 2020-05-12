@@ -13,10 +13,11 @@ const Projects = () => {
                     <div className="proj-text">Here are some projects that I've completed or am currently working on!</div>
                     <div className="proj-cards">
                         <Card 
-                            title="IOT Devices"
-                            text="Currently working on a joint project with Normative and SV Robotics. We are working on IOT devices to help the homeless. 
-                            They will likely be sensors situated at shelters which will better help the city to prepare during the winter. More details to follow..."
-                            tech={["Amazon Timestream"]}
+                            title="Vancouver Parking Ticket Webpage"
+                            text="Created a webpage that displays parking ticket data in Vancouver from 2019. All data taken from Vancouver Open Data API. 
+                                Displays aggregate data as well as specific addresses."
+                            linkurl="https://8sunyuan.github.io/website/"
+                            tech={["React.js", "Express.js", "Node.js", "MongoDB", "VancouverOpenData", "Google Maps Javascript API", "Heroku"]}
                         />
                         <Card 
                             title="Mozilla Donation Page"
